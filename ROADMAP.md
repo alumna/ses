@@ -2,7 +2,7 @@
 
 Official Amazon SES implementation of `Alumna::Mailer`. Published at [alumna/ses](https://github.com/alumna/ses) **0.1.0**.
 
-Not a Service adapter. No `AdapterSuite`. SMTP is a different shard.
+Not a Service adapter. No `AdapterSuite`. SMTP is a different shard: [Alumna SMTP](https://github.com/alumna/smtp).
 
 ## 0.1.0
 
@@ -17,4 +17,4 @@ Not a Service adapter. No `AdapterSuite`. SMTP is a different shard.
 ## Later
 
 * `SendRawEmail` and attachments.
-* SMTP stays a different shard.
+* SMTP stays a different shard ([Alumna SMTP](https://github.com/alumna/smtp)).

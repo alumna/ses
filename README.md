@@ -8,6 +8,8 @@ Amazon SES mailer for the [Alumna Backend Framework](https://github.com/alumna/b
 
 `send` posts SES API v2 `SendEmail` (`POST /v2/email/outbound-emails`). The body is text plus optional HTML. The shard signs the request with Signature Version 4 and stdlib `HTTP::Client`. There is no AWS SDK.
 
+To send through an SMTP server (also the Amazon SES SMTP interface), use [Alumna SMTP](https://github.com/alumna/smtp). `Alumna::SMTP` implements the same `Alumna::Mailer`, so the app code stays the same when you change `Alumna::SES.from_env` to `Alumna::SMTP.from_env`.
+
 See [ROADMAP.md](ROADMAP.md).
 
 ---
