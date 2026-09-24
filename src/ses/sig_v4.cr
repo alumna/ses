@@ -11,7 +11,10 @@ require "uri"
 #
 # Canonical headers already end with a newline.
 # The canonical request writes one more newline before the signed header names.
-struct Alumna::SES::SigV4
+#
+# A module, not a struct: it has only class methods. A struct adds a
+# constructor that nothing calls, and `crystal tool unreachable` reports it.
+module Alumna::SES::SigV4
   def self.sign(
     *,
     method : String,
